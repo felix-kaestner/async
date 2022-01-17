@@ -1,35 +1,36 @@
+import {performance} from 'perf_hooks'
 import {sleep, withDelay, withTimeout} from '../src'
 
 describe('Async', () => {
   test('Sleep', async () => {
-    const start = Date.now()
+    const start = performance.now()
     await sleep(100)
-    const end = Date.now()
-    expect(end).toBeGreaterThanOrEqual(start + 100)
+    const end = performance.now()
+    expect(end).toBeCloseTo(start + 100, -0.5)
   })
   test('With Timeout', async () => {
-    let start = Date.now()
+    let start = performance.now()
     await withTimeout(() => sleep(100), 200)
-    let end = Date.now()
-    expect(end).toBeGreaterThanOrEqual(start + 100)
+    let end = performance.now()
+    expect(end).toBeCloseTo(start + 100, -0.5)
 
-    start = Date.now()
+    start = performance.now()
     await withTimeout(() => sleep(200), 100)
-    end = Date.now()
-    expect(end).toBeGreaterThanOrEqual(start + 100)
+    end = performance.now()
+    expect(end).toBeCloseTo(start + 100, -0.5)
   })
   test('With Delay', async () => {
-    let start = Date.now()
+    let start = performance.now()
     await withDelay(() => sleep(100), 200)
-    let end = Date.now()
-    expect(end).toBeGreaterThanOrEqual(start + 200)
+    let end = performance.now()
+    expect(end).toBeCloseTo(start + 200, -0.5)
 
-    start = Date.now()
+    start = performance.now()
     await withDelay(() => sleep(200), 100)
-    end = Date.now()
-    expect(end).toBeGreaterThanOrEqual(start + 200)
+    end = performance.now()
+    expect(end).toBeCloseTo(start + 200, -0.5)
 
-    start = Date.now()
+    start = performance.now()
     try {
       await withDelay(
         () =>
@@ -41,12 +42,12 @@ describe('Async', () => {
         200
       )
     } catch (error) {
-      end = Date.now()
+      end = performance.now()
       expect(error).toEqual('foo')
-      expect(end).toBeGreaterThanOrEqual(start + 200)
+      expect(end).toBeCloseTo(start + 200, -0.5)
     }
 
-    start = Date.now()
+    start = performance.now()
     try {
       await withDelay(
         () =>
@@ -58,9 +59,9 @@ describe('Async', () => {
         100
       )
     } catch (error) {
-      end = Date.now()
+      end = performance.now()
       expect(error).toEqual('foo')
-      expect(end).toBeGreaterThanOrEqual(start + 200)
+      expect(end).toBeCloseTo(start + 200, -0.5)
     }
   })
 })
