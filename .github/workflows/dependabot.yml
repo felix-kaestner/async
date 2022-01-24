@@ -1,0 +1,32 @@
+# This workflow will automerge PRs created by dependabot
+
+name: Dependabot Automerge
+
+on:
+  workflow_run:
+    workflows: ['Node.js CI']
+    types: [completed]
+
+jobs:
+  dependabot:
+    runs-on: ubuntu-latest
+
+    if: "github.event.workflow_run.conclusion == 'success' && github.actor == 'dependabot[bot]'"
+    steps:
+      - name: automerge
+        uses: actions/github-script@v4.0.2
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            console.log(context.payload.workflow_run)
+            github.pulls.createReview({
+              repo: context.repo.repo,
+              owner: context.repo.owner,
+              pull_number: context.payload.workflow_run.pull_requests[0].number,
+              event: 'APPROVE'
+            })
+            github.pulls.merge({
+              repo: context.repo.repo,
+              owner: context.repo.owner,
+              pull_number: context.payload.workflow_run.pull_requests[0].number,
+            })
