@@ -2,6 +2,6 @@
 . "$(dirname "$0")/_/husky.sh"
 
 if ! git diff --cached --quiet HEAD -- src; then
-  yarn run docs
+  yarn docs
 fi
 yarn lint-staged
