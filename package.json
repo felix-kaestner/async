@@ -103,8 +103,5 @@
   },
   "buildOptions": {
     "name": "Async"
-  },
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
   }
 }
