@@ -57,8 +57,8 @@ jobs:
       - name: Run Tests 🌡
         run: yarn test:coverage
 
-      - name: Create package ⚡
-        run: yarn pack
+      - name: Run Build 🚧
+        run: yarn build:release
 
       - name: Create Release 🎉
         if: "github.event_name == 'push' && matrix.node-version == '16.x'"
