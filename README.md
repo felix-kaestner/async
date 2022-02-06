@@ -17,7 +17,7 @@
     </a>
 </p>
 
-## Installation
+## Install
 
 Install with `npm` or `yarn`:
 
@@ -29,9 +29,89 @@ $ npm i git+https://github.com/felix-kaestner/async
 $ yarn add git+https://github.com/felix-kaestner/async
 ```
 
-## Quickstart
+## Usage
 
-**WIP**
+```js
+import {sleep} from '@felix-kaestner/async'
+
+async function main() {
+  // ...
+  await sleep(500 /* ms */)
+  // ...
+}
+```
+
+## API
+
+### sleep(ms)
+
+Returns a promise which resolves after the specified amount of milliseconds.
+
+Example:
+
+```js
+import {sleep} from '@felix-kaestner/async'
+
+async function main() {
+  // ...
+  await sleep(500 /* ms */)
+  // ...
+}
+```
+
+### withTimeout(function, ms)
+
+Returns a promise which is rejected in the case the promise returned from the provided function is not resolved or rejected in the specified amount of milliseconds.
+
+This is useful if you are running asynchronous operations which may become stale after a specified amount of time
+
+Example:
+
+```js
+import {withTimeout} from '@felix-kaestner/async'
+
+async function sendStatusUpdate() {
+  // ...
+  await withTimeout(() => fetch('/status', {method: 'POST'}), 500 /* ms */)
+  // ...
+}
+```
+
+### withDelay(function, ms)
+
+Returns a promise which resolves after the promise returned from the provided function is resolved or rejected and at least the amount of milliseconds provided via the second parameter has passed.
+
+This is useful if you are running asynchronous operations which may complete very fast, and you want to prevent flickering in your UI.
+
+Example:
+
+```js
+import {withDelay} from '@felix-kaestner/async'
+
+async function main() {
+  // ... render initial UI, e.g. a loading spinner
+  const blog = await withDelay(() => fetch('/blog'), 500 /* ms */)
+  // ... render updated UI, e.g. a list of blog entries
+}
+```
+
+This function can also be combined with the `React.lazy` component in order to avoid to quick layout changes.
+
+React Example:
+
+```jsx
+import {withDelay} from '@felix-kaestner/async'
+import {Suspense, lazy} from 'react'
+
+// Show loading screen for a least 1 second while the app is imported
+const Root = lazy(() => withDelay(() => import('./Root'), 1000))
+
+function App() {
+  ;<Suspense fallback={<div>Loading...</div>}>
+    <Root />
+  </Suspense>
+}
+```
 
 ## Contribute
 
