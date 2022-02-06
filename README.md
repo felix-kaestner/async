@@ -31,7 +31,7 @@ $ yarn add git+https://github.com/felix-kaestner/async
 
 ## Usage
 
-```js
+```JavaScript
 import {sleep} from '@felix-kaestner/async'
 
 async function main() {
@@ -49,7 +49,7 @@ Returns a promise which resolves after the specified amount of milliseconds.
 
 Example:
 
-```js
+```JavaScript
 import {sleep} from '@felix-kaestner/async'
 
 async function main() {
@@ -67,7 +67,7 @@ This is useful if you are running asynchronous operations which may become stale
 
 Example:
 
-```js
+```JavaScript
 import {withTimeout} from '@felix-kaestner/async'
 
 async function sendStatusUpdate() {
@@ -85,7 +85,7 @@ This is useful if you are running asynchronous operations which may complete ver
 
 Example:
 
-```js
+```JavaScript
 import {withDelay} from '@felix-kaestner/async'
 
 async function main() {
@@ -99,7 +99,7 @@ This function can also be combined with the `React.lazy` component in order to a
 
 React Example:
 
-```jsx
+```JavaScriptx
 import {withDelay} from '@felix-kaestner/async'
 import {Suspense, lazy} from 'react'
 

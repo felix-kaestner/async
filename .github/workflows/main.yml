@@ -62,7 +62,7 @@ jobs:
 
       - name: Create Release 🎉
         if: "github.event_name == 'push' && matrix.node-version == '16.x'"
-        run: yarn semantic-release --dry-run
+        run: yarn semantic-release
         env:
           NPM_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
