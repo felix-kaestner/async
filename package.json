@@ -34,6 +34,7 @@
     "dev": "rollup -c -w",
     "build": "rollup -c",
     "build:types": "tsc --declaration --emitDeclarationOnly --declarationDir types",
+    "build:release": "npm-run-all build build:types api:extract",
     "test": "jest",
     "test:dev": "jest --watchAll",
     "test:coverage": "jest --coverage",
