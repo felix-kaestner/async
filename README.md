@@ -3,6 +3,9 @@
 <p align="center">
     <span>Async utilities.</span>
     <br><br>
+    <a href="https://app.codecov.io/gh/felix-kaestner/async/">
+        <img alt="Codecov" src="https://img.shields.io/codecov/c/github/felix-kaestner/async?color=29b6f6&style=flat-square&token=G0HFHGFM94">
+    </a>
     <a href="https://github.com/felix-kaestner/async/issues">
         <img alt="Issues" src="https://img.shields.io/github/issues/felix-kaestner/async?color=29b6f6&style=flat-square">
     </a>
