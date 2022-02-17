@@ -57,6 +57,12 @@ jobs:
       - name: Run Tests 🌡
         run: yarn test:coverage
 
+      - name: Upload coverage to Codecov 🌡
+        if: "matrix.node-version == '16.x'"
+        uses: codecov/codecov-action@v2
+        with:
+          token: ${{ secrets.CODECOV_TOKEN }}
+
       - name: Run Build 🚧
         run: yarn build:release
 
