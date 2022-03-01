@@ -1,3 +1,10 @@
+## [1.0.2](https://github.com/felix-kaestner/async/compare/v1.0.1...v1.0.2) (2022-03-01)
+
+
+### Bug Fixes
+
+* **deps:** bump actions/setup-node from 2 to 3 ([b0e5d97](https://github.com/felix-kaestner/async/commit/b0e5d9734d9695d98fed7a55b4829d021e5aad8a))
+
 ## [1.0.1](https://github.com/felix-kaestner/async/compare/v1.0.0...v1.0.1) (2022-03-01)
 
 
