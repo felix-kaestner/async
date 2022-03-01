@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/felix-kaestner/async/compare/v1.0.0...v1.0.1) (2022-03-01)
+
+
+### Bug Fixes
+
+* **deps:** bump actions/github-script from 5.1.0 to 6 ([f85f7d7](https://github.com/felix-kaestner/async/commit/f85f7d7269d1df1ad5e35549d929e798dc69dbee))
+
 # 1.0.0 (2022-02-06)
 
 ### Bug Fixes
