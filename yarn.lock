@@ -815,14 +815,14 @@
     "@jridgewell/resolve-uri" "^3.0.3"
     "@jridgewell/sourcemap-codec" "^1.4.10"
 
-"@microsoft/api-documenter@^7.21.1":
-  version "7.21.1"
-  resolved "https://registry.yarnpkg.com/@microsoft/api-documenter/-/api-documenter-7.21.1.tgz#dc560057f39a758a18156401a673aefc450331a7"
-  integrity sha512-Jme4ehP1Vl7h5sZ+K49432FO5BgmCsBMIn6zqKk9xQus8S5Mj31xSy5uMieqBsTOq/I/+P5FQ/UYf6Ie9NgeJw==
+"@microsoft/api-documenter@^7.21.2":
+  version "7.21.2"
+  resolved "https://registry.yarnpkg.com/@microsoft/api-documenter/-/api-documenter-7.21.2.tgz#7fa7b9f8a8b7e743a4bbd5e09cb2e370f6773fe8"
+  integrity sha512-ZluVnYpxwsIKX6vIgLSbJY/zFaxYlwceCBSTZCcUQcQHPJBEgs3QXiQzFMlC4aAX/IcrA0mL5asaAox7ujQHRA==
   dependencies:
-    "@microsoft/api-extractor-model" "7.26.0"
+    "@microsoft/api-extractor-model" "7.26.1"
     "@microsoft/tsdoc" "0.14.2"
-    "@rushstack/node-core-library" "3.53.3"
+    "@rushstack/node-core-library" "3.54.0"
     "@rushstack/ts-command-line" "4.13.1"
     colors "~1.2.1"
     js-yaml "~3.13.1"
@@ -836,6 +836,15 @@
     "@microsoft/tsdoc" "0.14.2"
     "@microsoft/tsdoc-config" "~0.16.1"
     "@rushstack/node-core-library" "3.53.3"
+
+"@microsoft/api-extractor-model@7.26.1":
+  version "7.26.1"
+  resolved "https://registry.yarnpkg.com/@microsoft/api-extractor-model/-/api-extractor-model-7.26.1.tgz#6ba65af964a77b130e0122e67902dcb89dd7dbb8"
+  integrity sha512-d/IwUIFDXYwecx2H0dVqv7lBMwwXNY6RN7TBFhBx+CCsDuYM6R5/o4qfRtUyyKzpNZMBJyuPP56XAhcBJeXiwg==
+  dependencies:
+    "@microsoft/tsdoc" "0.14.2"
+    "@microsoft/tsdoc-config" "~0.16.1"
+    "@rushstack/node-core-library" "3.54.0"
 
 "@microsoft/api-extractor@^7.34.0":
   version "7.34.0"
@@ -1259,6 +1268,19 @@
     import-lazy "~4.0.0"
     jju "~1.4.0"
     resolve "~1.17.0"
+    semver "~7.3.0"
+    z-schema "~5.0.2"
+
+"@rushstack/node-core-library@3.54.0":
+  version "3.54.0"
+  resolved "https://registry.yarnpkg.com/@rushstack/node-core-library/-/node-core-library-3.54.0.tgz#a3419a9b151a245b77ca8c8a23c254efedd43d79"
+  integrity sha512-QOfjrilrhVbJx5ahDhMzJ+izWJU+EFIbU9N2P1a3PSenQgIthWl68DoCLQUjsHqfsA4YxlABFfuYKoPV/GlTOg==
+  dependencies:
+    colors "~1.2.1"
+    fs-extra "~7.0.1"
+    import-lazy "~4.0.0"
+    jju "~1.4.0"
+    resolve "~1.22.1"
     semver "~7.3.0"
     z-schema "~5.0.2"
 
