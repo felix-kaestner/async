@@ -102,7 +102,7 @@ This function can also be combined with the `React.lazy` component in order to a
 
 React Example:
 
-```JavaScriptx
+```jsx
 import {withDelay} from '@felix-kaestner/async'
 import {Suspense, lazy} from 'react'
 
@@ -110,9 +110,11 @@ import {Suspense, lazy} from 'react'
 const Root = lazy(() => withDelay(() => import('./Root'), 1000))
 
 function App() {
-  ;<Suspense fallback={<div>Loading...</div>}>
-    <Root />
-  </Suspense>
+  return (
+    <Suspense fallback={<div>Loading...</div>}>
+      <Root />
+    </Suspense>
+  )
 }
 ```
 
@@ -122,9 +124,6 @@ All contributions in any form are welcome! 🙌
 Just use the [Issue](.github/ISSUE_TEMPLATE) and [Pull Request](.github/PULL_REQUEST_TEMPLATE) templates and
 I will be happy to review your suggestions. 👍
 
-## Support
+---
 
-Any kind of support is well appreciated! 👏  
-If you want to tweet about the project, make sure to tag me [@kaestner_felix](https://twitter.com/kaestner_felix). You can also support my open source work on [GitHub Sponsors](https://github.com/sponsors/felix-kaestner). All income will be directly invested in Coffee ☕!
-
-## Cheers ✌
+Released under the [MIT License](LICENSE).
