@@ -15,7 +15,7 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [14.x, 16.x]
+        node-version: [18.x, 19.x]
 
     steps:
       - name: Setup repo 🛎
@@ -58,7 +58,7 @@ jobs:
         run: yarn test:coverage
 
       - name: Upload coverage to Codecov 🌡
-        if: "matrix.node-version == '16.x'"
+        if: "matrix.node-version == '18.x'"
         uses: codecov/codecov-action@v3
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
@@ -67,7 +67,7 @@ jobs:
         run: yarn build:release
 
       - name: Create Release 🎉
-        if: "github.event_name == 'push' && matrix.node-version == '16.x'"
+        if: "github.event_name == 'push' && matrix.node-version == '18.x'"
         run: yarn semantic-release
         env:
           NPM_TOKEN: ${{ secrets.GITHUB_TOKEN }}
