@@ -829,10 +829,10 @@
     "@jridgewell/resolve-uri" "^3.0.3"
     "@jridgewell/sourcemap-codec" "^1.4.10"
 
-"@microsoft/api-documenter@^7.22.21":
-  version "7.22.21"
-  resolved "https://registry.yarnpkg.com/@microsoft/api-documenter/-/api-documenter-7.22.21.tgz#1af16999f6db543804d0323e829505239fd1a77a"
-  integrity sha512-o8VXpB83P87cLIYfkQS7ibShoYorTZ7Xs+gMwftT75pFaYWwhBuI8M0MPgzTGIAxzi338XfUjhctlVCjRn+Sqg==
+"@microsoft/api-documenter@^7.22.22":
+  version "7.22.22"
+  resolved "https://registry.yarnpkg.com/@microsoft/api-documenter/-/api-documenter-7.22.22.tgz#48276318002261ba3f43da9c6a01abcc4987c4de"
+  integrity sha512-eF0jni3CvTuQAtDP2IAW2iJ2ZrN7VEAw0h+mY/czlwrECtDOQwkVv13UB0KAIm8nz7LFvpU0QJPKsg5+R5xcrQ==
   dependencies:
     "@microsoft/api-extractor-model" "7.27.3"
     "@microsoft/tsdoc" "0.14.2"
