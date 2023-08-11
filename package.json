@@ -51,7 +51,7 @@
     "prepare": "husky install"
   },
   "devDependencies": {
-    "@commitlint/cli": "^17.7.0",
+    "@commitlint/cli": "^17.7.1",
     "@commitlint/config-conventional": "^17.6.7",
     "@microsoft/api-documenter": "^7.22.33",
     "@microsoft/api-extractor": "^7.36.4",
