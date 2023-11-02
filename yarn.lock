@@ -864,15 +864,15 @@
     "@jridgewell/resolve-uri" "^3.0.3"
     "@jridgewell/sourcemap-codec" "^1.4.10"
 
-"@microsoft/api-documenter@^7.23.10":
-  version "7.23.10"
-  resolved "https://registry.yarnpkg.com/@microsoft/api-documenter/-/api-documenter-7.23.10.tgz#8476b4fbd1134b8e32107e3b7c8de9220f049c88"
-  integrity sha512-9jPlK5EeScxmkhaAyhQI+C84zJ34sjD/k/dEEsJGOrgrLfS8G/wlkVEJZdTz3oBxtWd9SqsxopvcQECUlnoicQ==
+"@microsoft/api-documenter@^7.23.11":
+  version "7.23.11"
+  resolved "https://registry.yarnpkg.com/@microsoft/api-documenter/-/api-documenter-7.23.11.tgz#5bdfda399f208a7ad7de0d1a682ea44454f8c1e3"
+  integrity sha512-lrtB1DDN3xlvadGPKtR+Rdo3Dn6039D7URrHtINCG8o4bUdrRrMidU3WNWjAXktM94XLa58nxeoKCscOmEqVtQ==
   dependencies:
     "@microsoft/api-extractor-model" "7.28.2"
     "@microsoft/tsdoc" "0.14.2"
     "@rushstack/node-core-library" "3.61.0"
-    "@rushstack/ts-command-line" "4.17.0"
+    "@rushstack/ts-command-line" "4.17.1"
     colors "~1.2.1"
     js-yaml "~3.13.1"
     resolve "~1.22.1"
@@ -1336,6 +1336,16 @@
   version "4.17.0"
   resolved "https://registry.yarnpkg.com/@rushstack/ts-command-line/-/ts-command-line-4.17.0.tgz#da99fc18b847a060329967228413f010155d98e7"
   integrity sha512-1S0sXuEpZlzKTfvUqNs7Rg4leVkeLJc4Dn9cm+pSIn35a0Ztp5GxPN2gabD2G4RrQoQcJLLyVu+twzrJl1C0eA==
+  dependencies:
+    "@types/argparse" "1.0.38"
+    argparse "~1.0.9"
+    colors "~1.2.1"
+    string-argv "~0.3.1"
+
+"@rushstack/ts-command-line@4.17.1":
+  version "4.17.1"
+  resolved "https://registry.yarnpkg.com/@rushstack/ts-command-line/-/ts-command-line-4.17.1.tgz#c78db928ce5b93f2e98fd9e14c24f3f3876e57f1"
+  integrity sha512-2jweO1O57BYP5qdBGl6apJLB+aRIn5ccIRTPDyULh0KMwVzFqWtw6IZWt1qtUoZD/pD2RNkIOosH6Cq45rIYeg==
   dependencies:
     "@types/argparse" "1.0.38"
     argparse "~1.0.9"
