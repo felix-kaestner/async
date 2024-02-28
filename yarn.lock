@@ -885,18 +885,18 @@
     "@microsoft/tsdoc-config" "~0.16.1"
     "@rushstack/node-core-library" "4.0.2"
 
-"@microsoft/api-extractor@^7.40.6":
-  version "7.40.6"
-  resolved "https://registry.yarnpkg.com/@microsoft/api-extractor/-/api-extractor-7.40.6.tgz#810372f2fc75156e38120194d5b58d61142e9940"
-  integrity sha512-9N+XCIQB94Di+ETTzNGLqjgQydslynHou7QPgDhl5gZ+B/Q5hTv5jtqBglTUnTrC0trHdG5/YKN07ehGKlSb5g==
+"@microsoft/api-extractor@^7.41.0":
+  version "7.41.0"
+  resolved "https://registry.yarnpkg.com/@microsoft/api-extractor/-/api-extractor-7.41.0.tgz#ea6f09a58b86a5f089e4bb5cbc92d9443f14fa30"
+  integrity sha512-Wk4fcSqO1i32FspStEm4ak+cfdo2xGsWk/K9uZoYIRQxjQH/roLU78waP+g+GhoAg5OxH63BfY37h6ISkNfQEQ==
   dependencies:
     "@microsoft/api-extractor-model" "7.28.13"
     "@microsoft/tsdoc" "0.14.2"
     "@microsoft/tsdoc-config" "~0.16.1"
     "@rushstack/node-core-library" "4.0.2"
     "@rushstack/rig-package" "0.5.2"
-    "@rushstack/terminal" "0.9.0"
-    "@rushstack/ts-command-line" "4.17.3"
+    "@rushstack/terminal" "0.10.0"
+    "@rushstack/ts-command-line" "4.17.4"
     lodash "~4.17.15"
     resolve "~1.22.1"
     semver "~7.5.4"
@@ -1337,24 +1337,6 @@
   dependencies:
     "@rushstack/node-core-library" "4.0.2"
     supports-color "~8.1.1"
-
-"@rushstack/terminal@0.9.0":
-  version "0.9.0"
-  resolved "https://registry.yarnpkg.com/@rushstack/terminal/-/terminal-0.9.0.tgz#17ef64c671417a8cf080e60a64c37eb09df1a317"
-  integrity sha512-49RnIDooriXyqcd7mGyjh9CmjOjf/Vn8PkOQXHa1CS0/RrrynCJLFhRDkswf7gGXZW+6UhROOE8wTmbOrfUTSA==
-  dependencies:
-    "@rushstack/node-core-library" "4.0.2"
-    colors "~1.2.1"
-
-"@rushstack/ts-command-line@4.17.3":
-  version "4.17.3"
-  resolved "https://registry.yarnpkg.com/@rushstack/ts-command-line/-/ts-command-line-4.17.3.tgz#e8ae87c6dcfd93f43a8e44166f155b25dc695766"
-  integrity sha512-/PtTYW38A8iUviuCmQSccHfmx3uBh4Jm5YRPU2aTgYEgwT2jtg60vAbwnkMYkyaT1AbWpjZM3xq5uHYPURvStw==
-  dependencies:
-    "@rushstack/terminal" "0.9.0"
-    "@types/argparse" "1.0.38"
-    argparse "~1.0.9"
-    string-argv "~0.3.1"
 
 "@rushstack/ts-command-line@4.17.4":
   version "4.17.4"
@@ -2607,11 +2589,6 @@ colorette@^2.0.20:
   version "2.0.20"
   resolved "https://registry.yarnpkg.com/colorette/-/colorette-2.0.20.tgz#9eb793e6833067f7235902fcd3b09917a000a95a"
   integrity sha512-IfEDxwoWIjkeXL1eXcDiow4UbKjhLdq6/EuSVR9GMN7KVH3r9gQ83e73hsz1Nd1T3ijd5xv1wcWRYO+D6kCI2w==
-
-colors@~1.2.1:
-  version "1.2.5"
-  resolved "https://registry.yarnpkg.com/colors/-/colors-1.2.5.tgz#89c7ad9a374bc030df8013241f68136ed8835afc"
-  integrity sha512-erNRLao/Y3Fv54qUa0LBB+//Uf3YwMUmdJinN20yMXm9zdKKqH9wt7R9IIVZ+K7ShzfpLV/Zg8+VyrBJYB4lpg==
 
 columnify@^1.6.0:
   version "1.6.0"
