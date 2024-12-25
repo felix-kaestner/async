@@ -6,7 +6,7 @@
 
 Execute a async function an resolve it's promise with a given timeout.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function withTimeout<T>(block: () => Promise<T>, timeout: number): Promise<T | undefined>;
@@ -14,12 +14,56 @@ export declare function withTimeout<T>(block: () => Promise<T>, timeout: number)
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  block | () =&gt; Promise&lt;T&gt; | the builder function to execute |
-|  timeout | number | the number of milliseconds to wait for the builder to resolve |
+<table><thead><tr><th>
 
-<b>Returns:</b>
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+block
+
+
+</td><td>
+
+() =&gt; Promise&lt;T&gt;
+
+
+</td><td>
+
+the builder function to execute
+
+
+</td></tr>
+<tr><td>
+
+timeout
+
+
+</td><td>
+
+number
+
+
+</td><td>
+
+the number of milliseconds to wait for the builder to resolve
+
+
+</td></tr>
+</tbody></table>
+**Returns:**
 
 Promise&lt;T \| undefined&gt;
 

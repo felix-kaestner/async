@@ -6,7 +6,7 @@
 
 Execute a async function an resolve it's promise with a after at least a given amount of time.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function withDelay<T>(block: () => Promise<T>, timeout: number): Promise<T>;
@@ -14,12 +14,56 @@ export declare function withDelay<T>(block: () => Promise<T>, timeout: number): 
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  block | () =&gt; Promise&lt;T&gt; | the builder function to execute |
-|  timeout | number | the number of milliseconds to wait at least, before builder resolves |
+<table><thead><tr><th>
 
-<b>Returns:</b>
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+block
+
+
+</td><td>
+
+() =&gt; Promise&lt;T&gt;
+
+
+</td><td>
+
+the builder function to execute
+
+
+</td></tr>
+<tr><td>
+
+timeout
+
+
+</td><td>
+
+number
+
+
+</td><td>
+
+the number of milliseconds to wait at least, before builder resolves
+
+
+</td></tr>
+</tbody></table>
+**Returns:**
 
 Promise&lt;T&gt;
 

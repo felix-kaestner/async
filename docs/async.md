@@ -6,9 +6,48 @@
 
 ## Functions
 
-|  Function | Description |
-|  --- | --- |
-|  [sleep(timeout)](./async.sleep.md) | Create a promise which is resolved after the given milliseconds |
-|  [withDelay(block, timeout)](./async.withdelay.md) | Execute a async function an resolve it's promise with a after at least a given amount of time. |
-|  [withTimeout(block, timeout)](./async.withtimeout.md) | Execute a async function an resolve it's promise with a given timeout. |
+<table><thead><tr><th>
 
+Function
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[sleep(timeout)](./async.sleep.md)
+
+
+</td><td>
+
+Create a promise which is resolved after the given milliseconds
+
+
+</td></tr>
+<tr><td>
+
+[withDelay(block, timeout)](./async.withdelay.md)
+
+
+</td><td>
+
+Execute a async function an resolve it's promise with a after at least a given amount of time.
+
+
+</td></tr>
+<tr><td>
+
+[withTimeout(block, timeout)](./async.withtimeout.md)
+
+
+</td><td>
+
+Execute a async function an resolve it's promise with a given timeout.
+
+
+</td></tr>
+</tbody></table>

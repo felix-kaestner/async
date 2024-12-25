@@ -42,9 +42,8 @@ export function withDelay<T>(
 ): Promise<T> {
   return new Promise((resolve, reject) => {
     Promise.allSettled([block(), sleep(timeout)]).then(([result]) => {
-      result.status === 'fulfilled'
-        ? resolve(result.value)
-        : reject(result.reason)
+      if (result.status === 'fulfilled') resolve(result.value)
+      else reject(result.reason)
     }, reject)
   })
 }

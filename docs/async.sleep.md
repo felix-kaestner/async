@@ -6,7 +6,7 @@
 
 Create a promise which is resolved after the given milliseconds
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function sleep(timeout: number): Promise<undefined>;
@@ -14,11 +14,40 @@ export declare function sleep(timeout: number): Promise<undefined>;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  timeout | number | the number of milliseconds to suspend |
+<table><thead><tr><th>
 
-<b>Returns:</b>
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+timeout
+
+
+</td><td>
+
+number
+
+
+</td><td>
+
+the number of milliseconds to suspend
+
+
+</td></tr>
+</tbody></table>
+**Returns:**
 
 Promise&lt;undefined&gt;
 

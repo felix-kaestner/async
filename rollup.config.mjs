@@ -1,10 +1,12 @@
 import commonjs from '@rollup/plugin-commonjs'
 import resolve from '@rollup/plugin-node-resolve'
 import replace from '@rollup/plugin-replace'
+import terser from '@rollup/plugin-terser'
 import typescript from '@rollup/plugin-typescript'
+import {createRequire} from 'module'
 import {defineConfig} from 'rollup'
-import {terser} from 'rollup-plugin-terser'
-import pkg from './package.json'
+
+const pkg = createRequire(import.meta.url)('./package.json')
 
 /**
  * Flag to indicate build of library

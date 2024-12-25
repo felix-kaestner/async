@@ -6,7 +6,24 @@
 
 ## Packages
 
-|  Package | Description |
-|  --- | --- |
-|  [@felix-kaestner/async](./async.md) |  |
+<table><thead><tr><th>
 
+Package
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[@felix-kaestner/async](./async.md)
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
