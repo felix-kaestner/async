@@ -1,3 +1,39 @@
+## [2.0.1](https://github.com/felix-kaestner/async/compare/v2.0.0...v2.0.1) (2024-12-27)
+
+
+### Bug Fixes
+
+* **deps:** bump actions/cache from 3.2.5 to 3.2.6 ([#328](https://github.com/felix-kaestner/async/issues/328)) ([d30b594](https://github.com/felix-kaestner/async/commit/d30b59456ff6d762693346cdf19c4ef2c01f1289))
+* **deps:** bump actions/cache from 3.2.6 to 3.3.0 ([#341](https://github.com/felix-kaestner/async/issues/341)) ([86adb7d](https://github.com/felix-kaestner/async/commit/86adb7dbd357f53e1ed3a2d4e0d43c13fcb0106b))
+* **deps:** bump actions/cache from 3.3.0 to 3.3.1 ([#345](https://github.com/felix-kaestner/async/issues/345)) ([b205a99](https://github.com/felix-kaestner/async/commit/b205a99e5a8a5d04cc9d624dc503622aec2a7e33))
+* **deps:** bump actions/cache from 3.3.1 to 3.3.3 ([#639](https://github.com/felix-kaestner/async/issues/639)) ([8756dae](https://github.com/felix-kaestner/async/commit/8756dae0c6983b1f0f5af925fa21ea3d5cc44a4c))
+* **deps:** bump actions/cache from 3.3.3 to 4.0.0 ([#647](https://github.com/felix-kaestner/async/issues/647)) ([5673b5a](https://github.com/felix-kaestner/async/commit/5673b5ad566f69d95cbd119cb899e5c2404fcda4))
+* **deps:** bump actions/cache from 4.0.0 to 4.0.1 ([#706](https://github.com/felix-kaestner/async/issues/706)) ([776c0ef](https://github.com/felix-kaestner/async/commit/776c0efbfcfbee803438bb3407f30f21c253ad7a))
+* **deps:** bump actions/cache from 4.0.1 to 4.0.2 ([#729](https://github.com/felix-kaestner/async/issues/729)) ([22873ca](https://github.com/felix-kaestner/async/commit/22873ca7a4d6a21a1aebe283796085e235a1cd5b))
+* **deps:** bump actions/cache from 4.0.2 to 4.1.0 ([#893](https://github.com/felix-kaestner/async/issues/893)) ([683c007](https://github.com/felix-kaestner/async/commit/683c00781cef37bde87bf1489065134c1f54c436))
+* **deps:** bump actions/cache from 4.1.0 to 4.1.1 ([#895](https://github.com/felix-kaestner/async/issues/895)) ([63f48b4](https://github.com/felix-kaestner/async/commit/63f48b48d68ab2161324de3fba7a86a644435c76))
+* **deps:** bump actions/cache from 4.1.1 to 4.1.2 ([#913](https://github.com/felix-kaestner/async/issues/913)) ([fc12ad8](https://github.com/felix-kaestner/async/commit/fc12ad8eda44f5dad10a9123f2507759c2ff2f87))
+* **deps:** bump actions/cache from 4.1.2 to 4.2.0 ([#945](https://github.com/felix-kaestner/async/issues/945)) ([1744d4c](https://github.com/felix-kaestner/async/commit/1744d4cf0ff1452e42c9b576ed63962a7f74a89f))
+* **deps:** bump actions/checkout from 3 to 4 ([#517](https://github.com/felix-kaestner/async/issues/517)) ([a139088](https://github.com/felix-kaestner/async/commit/a1390887cd90c86b983b1e57785204fea0b40fb2))
+* **deps:** bump actions/labeler from 4 to 5 ([#625](https://github.com/felix-kaestner/async/issues/625)) ([61c91f5](https://github.com/felix-kaestner/async/commit/61c91f5d39936bcad05c47af0a69a32966202134))
+* **deps:** bump actions/setup-node from 3 to 4 ([#576](https://github.com/felix-kaestner/async/issues/576)) ([a4c53af](https://github.com/felix-kaestner/async/commit/a4c53afcab68a14f09d6d302eb0ddc45c0a46760))
+* **deps:** bump actions/stale from 7 to 8 ([#357](https://github.com/felix-kaestner/async/issues/357)) ([e7952a3](https://github.com/felix-kaestner/async/commit/e7952a31a2c973dc021e9c169fcdfbc75dea5e97))
+* **deps:** bump actions/stale from 8 to 9 ([#622](https://github.com/felix-kaestner/async/issues/622)) ([c07fd5d](https://github.com/felix-kaestner/async/commit/c07fd5dd442fc8cd4f5d734aca8697e1f9af64dd))
+* **deps:** bump codecov/codecov-action from 3 to 4 ([#666](https://github.com/felix-kaestner/async/issues/666)) ([d98b7e9](https://github.com/felix-kaestner/async/commit/d98b7e9b16cdce22fe8a31b2523882823b3f7fd7))
+* **deps:** bump codecov/codecov-action from 4 to 5 ([#925](https://github.com/felix-kaestner/async/issues/925)) ([7642074](https://github.com/felix-kaestner/async/commit/76420741aa63b850bf965de4acf91dec622bcb65))
+* **deps:** bump dependabot/fetch-metadata from 1.3.6 to 1.4.0 ([#376](https://github.com/felix-kaestner/async/issues/376)) ([0495592](https://github.com/felix-kaestner/async/commit/0495592d46fce0bfb0270d7b3e16d64817e4e5e5))
+* **deps:** bump dependabot/fetch-metadata from 1.4.0 to 1.5.1 ([#415](https://github.com/felix-kaestner/async/issues/415)) ([607ba19](https://github.com/felix-kaestner/async/commit/607ba19c2394cfb0139df26da58531ee4bde0529))
+* **deps:** bump dependabot/fetch-metadata from 1.5.1 to 1.6.0 ([#453](https://github.com/felix-kaestner/async/issues/453)) ([4574d3d](https://github.com/felix-kaestner/async/commit/4574d3d64f29626ec2658ad245b7b97f7d30279a))
+* **deps:** bump dependabot/fetch-metadata from 1.6.0 to 2.1.0 ([#746](https://github.com/felix-kaestner/async/issues/746)) ([d6baf2f](https://github.com/felix-kaestner/async/commit/d6baf2f59c3f69cf3fb869c024ef346bc0fa5dd7))
+* **deps:** bump dependabot/fetch-metadata from 2.1.0 to 2.2.0 ([#804](https://github.com/felix-kaestner/async/issues/804)) ([4efe58c](https://github.com/felix-kaestner/async/commit/4efe58c39b8a6669c887d3bf21cf4cde36d51706))
+* **deps:** bump ip from 1.1.8 to 1.1.9 ([#687](https://github.com/felix-kaestner/async/issues/687)) ([e35e0cf](https://github.com/felix-kaestner/async/commit/e35e0cf5ffb618058fe5beb2ea901524c0c4849c))
+* **deps:** bump semver from 5.7.1 to 5.7.2 ([#462](https://github.com/felix-kaestner/async/issues/462)) ([eb2369d](https://github.com/felix-kaestner/async/commit/eb2369d71eb9f3d2847b4fd4f8556315fe21003e))
+* **deps:** bump tar from 6.1.11 to 6.2.1 ([#739](https://github.com/felix-kaestner/async/issues/739)) ([8fd68f6](https://github.com/felix-kaestner/async/commit/8fd68f6742ee58b63fe3374d0ac6c1bdbe1a2771))
+* **deps:** bump tough-cookie from 4.0.0 to 4.1.3 ([#460](https://github.com/felix-kaestner/async/issues/460)) ([cefcfb3](https://github.com/felix-kaestner/async/commit/cefcfb3c64126fba01595808d7accb2809b48e25))
+* **deps:** bump word-wrap from 1.2.3 to 1.2.4 ([#471](https://github.com/felix-kaestner/async/issues/471)) ([db874a7](https://github.com/felix-kaestner/async/commit/db874a7b86fc9523a3baab8b343207bd9581d579))
+* **deps:** bump ws from 7.5.8 to 7.5.10 ([#796](https://github.com/felix-kaestner/async/issues/796)) ([c930bd6](https://github.com/felix-kaestner/async/commit/c930bd6093d7e992b11dba2aa12c0104dcfda036))
+* **deps:** bump yaml from 2.2.1 to 2.2.2 ([#379](https://github.com/felix-kaestner/async/issues/379)) ([fbcb41c](https://github.com/felix-kaestner/async/commit/fbcb41c620e206df27f12a2ed8b19817d272fa96))
+
 # [2.0.0](https://github.com/felix-kaestner/async/compare/v1.0.2...v2.0.0) (2023-02-25)
 
 
